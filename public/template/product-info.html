@@ -1,0 +1,88 @@
+	 
+<div class="mainContainer">
+	<div class="row summary">
+		<h2> Product Summary </h2>
+	</div>
+	<div class="row product-info">
+		<div class="img-container">
+			<img src={{imageUrl}} />
+		</div>
+		<div class="product-details-container">
+			<div class="row">
+					<div class="col1">
+						<h6> Item Name: </h6>
+					</div>
+					<div class="col2">
+						<h6> {{item}}</h6>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Size: </h6>
+				</div>
+				<div class="col2">
+					<h6> {{size}} </h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Quantity: </h6>
+				</div>
+				<div class="col2">
+					<input class="quantity" type='number' value="{{quantity}}" disabled/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Color: </h6>
+				</div>
+				<div class="col2">
+					<h6>{{color}} </h6>
+				</div>
+			</div>
+		</div>
+		<div class="address-details-container">
+			<div class="row">
+				<div class="col1">
+					<h6> Address1: </h6>
+				</div>
+				<div class="col2">
+					<input class="addr1" type='text' value="{{address.addr1}}" disabled/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Address2: </h6>
+				</div>
+				<div class="col2">
+					<input class="addr2" type='text' value="{{address.addr2}}" disabled/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> City: </h6>
+				</div>
+				<div class="col2">
+					<input class="city" type='text' value="{{address.city}}" disabled/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> State: </h6>
+				</div>
+				<div class="col2">
+					<input class="state" type='text' value="{{address.state}}" disabled/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Pincode: </h6>
+				</div>
+				<div class="col2">
+					<input class="pincode" type='text' value="{{address.pincode}}" disabled/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	 

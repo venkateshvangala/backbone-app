@@ -1,0 +1,107 @@
+	 
+<div class="mainContainer">
+	<div class="row">
+		<div class="img-container">
+			<img src={{imageUrl}} />
+		</div>
+		<div class="product-details-container">
+			<div class="row">
+				<h2> Product Details </h2>
+			</div>
+			<div class="row">
+					<div class="col1">
+						<h6> Item Name: </h6>
+					</div>
+					<div class="col2">
+						<h6> {{item}}</h6>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Size: </h6>
+				</div>
+				<div class="col2">
+					<h6> 
+						<select class="size">
+							<option value="s" {{#ifCond 's' size }} selected {{/ifCond}}> Small </option>
+							<option value="m" {{#ifCond 'm' size }} selected {{/ifCond}}> Medium </option>		
+							<option value="l" {{#ifCond 'l' size }} selected {{/ifCond}}> Large </option>			
+						</select>	
+					</h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Quantity: </h6>
+				</div>
+				<div class="col2">
+					<input class="quantity" type='number' value="{{quantity}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Color: </h6>
+				</div>
+				<div class="col2">
+					<select class="color">
+						<option value="s" {{#ifCond 'red' color }} selected {{/ifCond}}> Red </option>
+						<option value="m" {{#ifCond 'blue' color }} selected {{/ifCond}}> Blue </option>		
+						<option value="l" {{#ifCond 'green' color }} selected {{/ifCond}}> Green </option>			
+					</select>		
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn btn-success pull-right" id="submit-product" value="Finish"> Next </button>
+			</div>
+		</div>
+		<div class="address-details-container inactive">
+			<div class="row">
+				<h2> Shipping Details </h2>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Address1: </h6>
+				</div>
+				<div class="col2">
+					<input class="addr1" type='text' value="{{address.addr1}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Address2: </h6>
+				</div>
+				<div class="col2">
+					<input class="addr2" type='text' value="{{address.addr2}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> City: </h6>
+				</div>
+				<div class="col2">
+					<input class="city" type='text' value="{{address.city}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> State: </h6>
+				</div>
+				<div class="col2">
+					<input class="state" type='text' value="{{address.state}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<h6> Pincode: </h6>
+				</div>
+				<div class="col2">
+					<input class="pincode" type='text' value="{{address.pincode}}" />
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn btn-success pull-right" id="finish-product" value="Finish"> Finish </button>
+			</div>
+		</div>
+	</div>
+</div>
+	 
